@@ -63,8 +63,7 @@ let MeetupDetails = (props) => {
 
 export const getStaticPaths = async () => {
   const data = await getMeetupIds();
-  console.log(data);
-  console.log(typeof data);
+
   const paths = data.payload.map((item) => ({
     params: {
       meetupId: item,
