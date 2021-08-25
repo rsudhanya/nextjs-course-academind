@@ -1,0 +1,19 @@
+{
+  "name": "nextjs-course",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "materialize-css": "^1.0.0-rc.2",
+    "mongodb": "^4.1.0",
+    "next": "10.0.6",
+    "next-auth": "^3.28.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}
