@@ -20,20 +20,20 @@ const MeetupItem = (props) => {
     router.push(`/meetups/${props.id}`);
   };
 
-  useEffect(() => {
-    const showDetailsHandlerButtonId = document.getElementById(
-      showDetailsHandlerButton
-    );
-    M.Tooltip.init(showDetailsHandlerButtonId);
+  // useEffect(() => {
+  //   const showDetailsHandlerButtonId = document.getElementById(
+  //     showDetailsHandlerButton
+  //   );
+  //   M.Tooltip.init(showDetailsHandlerButtonId);
 
-    return () => {
-      const elem = document.getElementById(showDetailsHandlerButton);
-      if (elem) {
-        const instance = M.Tooltip.getInstance(elem);
-        instance.destroy();
-      }
-    };
-  }, []);
+  //   return () => {
+  //     const elem = document.getElementById(showDetailsHandlerButton);
+  //     if (elem) {
+  //       const instance = M.Tooltip.getInstance(elem);
+  //       instance.destroy();
+  //     }
+  //   };
+  // }, []);
 
   return (
     <li className="collection-item avatar">
