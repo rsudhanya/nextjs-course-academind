@@ -26,7 +26,7 @@ let HomePage = (props) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async (context) => {
   // const url = process.env.NEXTAUTH_URL;
 
   // const response = await fetch(`${url}/api/meetups`, {
@@ -42,7 +42,6 @@ export const getStaticProps = async () => {
   return {
     props: {
       meetups: data.payload,
-      revalidate: 100,
     },
   };
 };
